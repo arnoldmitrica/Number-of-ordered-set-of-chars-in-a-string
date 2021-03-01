@@ -5,4 +5,4 @@ I left prints on purpose in my code so anybody can see much better what happens.
 For s: XAMXAMXAM and the word MAX , number of occurences is 0. <br/>
 For s: MMMAAAXXX and the word MAX, number of occurences is 3. <br/>
 For s: MAXMAXMAX and the word MAX, number of occurences is 3. <br/>
-For s: XXXAAAMMM and the word MAX, number of occurences is 1. <br/>
+For s: XXXAAAMMM and the word MAX, number of occurences is 0. <br/>
