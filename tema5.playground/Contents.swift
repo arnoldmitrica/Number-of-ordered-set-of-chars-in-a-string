@@ -15,7 +15,6 @@ func search(wordul: String, index: String.Index, numberOfLoops:Int) -> Int{
     print("position:\(position)")
     print("wordu:\(wordu)")
     print("wordu[position]: \(wordu[position])")
-    var lastWorduPosition = wordu[position]
     print("word before \(word) cu word.first \(String(describing: word.first))")
     if (wordu[position] == word.first && wordu.first != word.first){
         print("wordtoremove")
@@ -39,21 +38,7 @@ func search(wordul: String, index: String.Index, numberOfLoops:Int) -> Int{
                 }
             }
         }
-        var endind:String.Index?
-        if let w = word.last {
-            if let endi = word.lastIndex(of: w){
-                endind = endi
-            }
-        }
-        if let end = endind{
-            if let last = word.index(index, offsetBy: 1, limitedBy: end) {
-                lastWorduPosition = word[last]
-            }
-        }
     }
-    print("lastWorduPosition \(lastWorduPosition)")
-    print("beforeLast letter")
-    let lastLetter = wordu[position]
     
     if wordu.contains(word[index]) == false {
         return numberOfLoops
